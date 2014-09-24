@@ -29,12 +29,29 @@
 {
     // Drawing code
     CGContextRef context = UIGraphicsGetCurrentContext();
-    UIColor *outerTop = [UIColor colorWithHue:self.hue saturation:self.saturation brightness:self.brightness alpha:1.0f];
-    UIColor *shadowColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:0.5];
+    
+    UIColor *  blackColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0];
+    UIColor *  highlightStart = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.4];
+    UIColor *  highlightStop = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.1];
+    UIColor *  shadowColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:0.5];
+    
+    UIColor * outerTop = [UIColor colorWithHue:self.hue saturation:self.saturation brightness:1.0*self.brightness alpha:1.0];
+    UIColor * outerBottom = [UIColor colorWithHue:self.hue saturation:self.saturation brightness:0.80*self.brightness alpha:1.0];
+    UIColor * innerStroke = [UIColor colorWithHue:self.hue saturation:self.saturation brightness:0.80*self.brightness alpha:1.0];
+    UIColor * innerTop = [UIColor colorWithHue:self.hue saturation:self.saturation brightness:0.90*self.brightness alpha:1.0];
+    UIColor * innerBottom = [UIColor colorWithHue:self.hue saturation:self.saturation brightness:0.70*self.brightness alpha:1.0];
     
     CGFloat outerMargin = 5.0f;
     CGRect outerRect = CGRectInset(self.bounds, outerMargin, outerMargin);
     CGMutablePathRef outerPath = createRoundedRectForRect(outerRect, 6.0);
+    
+    CGFloat innerMargin = 3.0f;
+    CGRect innerRect = CGRectInset(outerRect, innerMargin, innerMargin);
+    CGMutablePathRef innerPath = createRoundedRectForRect(innerRect, 6.0);
+    
+    CGFloat highlightMargin = 2.0f;
+    CGRect highlightRect = CGRectInset(outerRect, highlightMargin, highlightMargin);
+    CGMutablePathRef highlightPath = createRoundedRectForRect(highlightRect, 6.0);
     
     if (self.state != UIControlStateHighlighted) {
         CGContextSaveGState(context);
@@ -44,6 +61,48 @@
         CGContextFillPath(context);
         CGContextRestoreGState(context);
     }
+    
+    CGContextSaveGState(context);
+    CGContextAddPath(context, outerPath);
+    CGContextClip(context);
+    drawGlossAndGradient(context, outerRect, outerTop.CGColor, outerBottom.CGColor);
+    CGContextRestoreGState(context);
+    
+    CGContextSaveGState(context);
+    CGContextAddPath(context, innerPath);
+    CGContextClip(context);
+    drawGlossAndGradient(context, innerRect, innerTop.CGColor, innerBottom.CGColor);
+    CGContextRestoreGState(context);
+    
+    if (self.state != UIControlStateHighlighted) {
+        CGContextSaveGState(context);
+        CGContextSetLineWidth(context, 4.0);
+        CGContextAddPath(context, outerPath);
+        CGContextAddPath(context, highlightPath);
+        CGContextEOClip(context);
+        drawLinearGradient(context, outerRect, highlightStart.CGColor, highlightStop.CGColor);
+        CGContextRestoreGState(context);
+    }
+    
+    CGContextSaveGState(context);
+    CGContextSetLineWidth(context, 2.0);
+    CGContextSetStrokeColorWithColor(context, blackColor.CGColor);
+    CGContextAddPath(context, outerPath);
+    CGContextStrokePath(context);
+    CGContextRestoreGState(context);
+    
+    CGContextSaveGState(context);
+    CGContextSetLineWidth(context, 2.0);
+    CGContextSetStrokeColorWithColor(context, innerStroke.CGColor);
+    CGContextAddPath(context, innerPath);
+    CGContextClip(context);
+    CGContextAddPath(context, innerPath);
+    CGContextStrokePath(context);
+    CGContextRestoreGState(context);
+    
+    CFRelease(outerPath);
+    CFRelease(innerPath);
+    CFRelease(highlightPath);
 //    CGContextSetFillColorWithColor(context, color.CGColor);
 //    CGContextFillRect(context, self.bounds);
     
