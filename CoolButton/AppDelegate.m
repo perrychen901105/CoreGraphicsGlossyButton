@@ -13,6 +13,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    // http://www.raywenderlich.com/33330/core-graphics-tutorial-glossy-buttons
     return YES;
 }
 							
