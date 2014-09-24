@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040ACCC319D2A99200E5931E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040ACCC219D2A99200E5931E /* Foundation.framework */; };
+		040ACCC519D2A99200E5931E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040ACCC419D2A99200E5931E /* CoreGraphics.framework */; };
+		040ACCC719D2A99200E5931E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040ACCC619D2A99200E5931E /* UIKit.framework */; };
+		040ACCCD19D2A99200E5931E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 040ACCCB19D2A99200E5931E /* InfoPlist.strings */; };
+		040ACCCF19D2A99200E5931E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 040ACCCE19D2A99200E5931E /* main.m */; };
+		040ACCD319D2A99300E5931E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 040ACCD219D2A99300E5931E /* AppDelegate.m */; };
+		040ACCD619D2A99300E5931E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040ACCD419D2A99300E5931E /* Main_iPhone.storyboard */; };
+		040ACCD919D2A99300E5931E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040ACCD719D2A99300E5931E /* Main_iPad.storyboard */; };
+		040ACCDC19D2A99300E5931E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040ACCDB19D2A99300E5931E /* ViewController.m */; };
+		040ACCDE19D2A99300E5931E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040ACCDD19D2A99300E5931E /* Images.xcassets */; };
+		040ACCE519D2A99300E5931E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040ACCE419D2A99300E5931E /* XCTest.framework */; };
+		040ACCE619D2A99300E5931E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040ACCC219D2A99200E5931E /* Foundation.framework */; };
+		040ACCE719D2A99300E5931E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040ACCC619D2A99200E5931E /* UIKit.framework */; };
+		040ACCEF19D2A99300E5931E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 040ACCED19D2A99300E5931E /* InfoPlist.strings */; };
+		040ACCF119D2A99300E5931E /* CoolButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 040ACCF019D2A99300E5931E /* CoolButtonTests.m */; };
+		040ACCFC19D2AAE200E5931E /* CoolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 040ACCFB19D2AAE200E5931E /* CoolButton.m */; };
+		040ACCFF19D2B97200E5931E /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 040ACCFE19D2B97200E5931E /* Common.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		040ACCE819D2A99300E5931E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 040ACCB719D2A99200E5931E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 040ACCBE19D2A99200E5931E;
+			remoteInfo = CoolButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		040ACCBF19D2A99200E5931E /* CoolButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		040ACCC219D2A99200E5931E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		040ACCC419D2A99200E5931E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		040ACCC619D2A99200E5931E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		040ACCCA19D2A99200E5931E /* CoolButton-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoolButton-Info.plist"; sourceTree = "<group>"; };
+		040ACCCC19D2A99200E5931E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		040ACCCE19D2A99200E5931E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		040ACCD019D2A99300E5931E /* CoolButton-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoolButton-Prefix.pch"; sourceTree = "<group>"; };
+		040ACCD119D2A99300E5931E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		040ACCD219D2A99300E5931E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		040ACCD519D2A99300E5931E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		040ACCD819D2A99300E5931E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		040ACCDA19D2A99300E5931E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		040ACCDB19D2A99300E5931E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		040ACCDD19D2A99300E5931E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		040ACCE319D2A99300E5931E /* CoolButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		040ACCE419D2A99300E5931E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		040ACCEC19D2A99300E5931E /* CoolButtonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoolButtonTests-Info.plist"; sourceTree = "<group>"; };
+		040ACCEE19D2A99300E5931E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		040ACCF019D2A99300E5931E /* CoolButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoolButtonTests.m; sourceTree = "<group>"; };
+		040ACCFA19D2AAE200E5931E /* CoolButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolButton.h; sourceTree = "<group>"; };
+		040ACCFB19D2AAE200E5931E /* CoolButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolButton.m; sourceTree = "<group>"; };
+		040ACCFD19D2B97200E5931E /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		040ACCFE19D2B97200E5931E /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		040ACCBC19D2A99200E5931E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040ACCC519D2A99200E5931E /* CoreGraphics.framework in Frameworks */,
+				040ACCC719D2A99200E5931E /* UIKit.framework in Frameworks */,
+				040ACCC319D2A99200E5931E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040ACCE019D2A99300E5931E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040ACCE519D2A99300E5931E /* XCTest.framework in Frameworks */,
+				040ACCE719D2A99300E5931E /* UIKit.framework in Frameworks */,
+				040ACCE619D2A99300E5931E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		040ACCB619D2A99200E5931E = {
+			isa = PBXGroup;
+			children = (
+				040ACCC819D2A99200E5931E /* CoolButton */,
+				040ACCEA19D2A99300E5931E /* CoolButtonTests */,
+				040ACCC119D2A99200E5931E /* Frameworks */,
+				040ACCC019D2A99200E5931E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		040ACCC019D2A99200E5931E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				040ACCBF19D2A99200E5931E /* CoolButton.app */,
+				040ACCE319D2A99300E5931E /* CoolButtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		040ACCC119D2A99200E5931E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				040ACCC219D2A99200E5931E /* Foundation.framework */,
+				040ACCC419D2A99200E5931E /* CoreGraphics.framework */,
+				040ACCC619D2A99200E5931E /* UIKit.framework */,
+				040ACCE419D2A99300E5931E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		040ACCC819D2A99200E5931E /* CoolButton */ = {
+			isa = PBXGroup;
+			children = (
+				040ACCD119D2A99300E5931E /* AppDelegate.h */,
+				040ACCD219D2A99300E5931E /* AppDelegate.m */,
+				040ACCD419D2A99300E5931E /* Main_iPhone.storyboard */,
+				040ACCD719D2A99300E5931E /* Main_iPad.storyboard */,
+				040ACCDA19D2A99300E5931E /* ViewController.h */,
+				040ACCDB19D2A99300E5931E /* ViewController.m */,
+				040ACCFA19D2AAE200E5931E /* CoolButton.h */,
+				040ACCFB19D2AAE200E5931E /* CoolButton.m */,
+				040ACCFD19D2B97200E5931E /* Common.h */,
+				040ACCFE19D2B97200E5931E /* Common.m */,
+				040ACCDD19D2A99300E5931E /* Images.xcassets */,
+				040ACCC919D2A99200E5931E /* Supporting Files */,
+			);
+			path = CoolButton;
+			sourceTree = "<group>";
+		};
+		040ACCC919D2A99200E5931E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				040ACCCA19D2A99200E5931E /* CoolButton-Info.plist */,
+				040ACCCB19D2A99200E5931E /* InfoPlist.strings */,
+				040ACCCE19D2A99200E5931E /* main.m */,
+				040ACCD019D2A99300E5931E /* CoolButton-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		040ACCEA19D2A99300E5931E /* CoolButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				040ACCF019D2A99300E5931E /* CoolButtonTests.m */,
+				040ACCEB19D2A99300E5931E /* Supporting Files */,
+			);
+			path = CoolButtonTests;
+			sourceTree = "<group>";
+		};
+		040ACCEB19D2A99300E5931E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				040ACCEC19D2A99300E5931E /* CoolButtonTests-Info.plist */,
+				040ACCED19D2A99300E5931E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		040ACCBE19D2A99200E5931E /* CoolButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040ACCF419D2A99300E5931E /* Build configuration list for PBXNativeTarget "CoolButton" */;
+			buildPhases = (
+				040ACCBB19D2A99200E5931E /* Sources */,
+				040ACCBC19D2A99200E5931E /* Frameworks */,
+				040ACCBD19D2A99200E5931E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoolButton;
+			productName = CoolButton;
+			productReference = 040ACCBF19D2A99200E5931E /* CoolButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		040ACCE219D2A99300E5931E /* CoolButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040ACCF719D2A99300E5931E /* Build configuration list for PBXNativeTarget "CoolButtonTests" */;
+			buildPhases = (
+				040ACCDF19D2A99300E5931E /* Sources */,
+				040ACCE019D2A99300E5931E /* Frameworks */,
+				040ACCE119D2A99300E5931E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				040ACCE919D2A99300E5931E /* PBXTargetDependency */,
+			);
+			name = CoolButtonTests;
+			productName = CoolButtonTests;
+			productReference = 040ACCE319D2A99300E5931E /* CoolButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		040ACCB719D2A99200E5931E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = pindao;
+				TargetAttributes = {
+					040ACCE219D2A99300E5931E = {
+						TestTargetID = 040ACCBE19D2A99200E5931E;
+					};
+				};
+			};
+			buildConfigurationList = 040ACCBA19D2A99200E5931E /* Build configuration list for PBXProject "CoolButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 040ACCB619D2A99200E5931E;
+			productRefGroup = 040ACCC019D2A99200E5931E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				040ACCBE19D2A99200E5931E /* CoolButton */,
+				040ACCE219D2A99300E5931E /* CoolButtonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		040ACCBD19D2A99200E5931E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040ACCD919D2A99300E5931E /* Main_iPad.storyboard in Resources */,
+				040ACCDE19D2A99300E5931E /* Images.xcassets in Resources */,
+				040ACCD619D2A99300E5931E /* Main_iPhone.storyboard in Resources */,
+				040ACCCD19D2A99200E5931E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040ACCE119D2A99300E5931E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040ACCEF19D2A99300E5931E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		040ACCBB19D2A99200E5931E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040ACCFC19D2AAE200E5931E /* CoolButton.m in Sources */,
+				040ACCDC19D2A99300E5931E /* ViewController.m in Sources */,
+				040ACCFF19D2B97200E5931E /* Common.m in Sources */,
+				040ACCD319D2A99300E5931E /* AppDelegate.m in Sources */,
+				040ACCCF19D2A99200E5931E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040ACCDF19D2A99300E5931E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040ACCF119D2A99300E5931E /* CoolButtonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		040ACCE919D2A99300E5931E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 040ACCBE19D2A99200E5931E /* CoolButton */;
+			targetProxy = 040ACCE819D2A99300E5931E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		040ACCCB19D2A99200E5931E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				040ACCCC19D2A99200E5931E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		040ACCD419D2A99300E5931E /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				040ACCD519D2A99300E5931E /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		040ACCD719D2A99300E5931E /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				040ACCD819D2A99300E5931E /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		040ACCED19D2A99300E5931E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				040ACCEE19D2A99300E5931E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		040ACCF219D2A99300E5931E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		040ACCF319D2A99300E5931E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		040ACCF519D2A99300E5931E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoolButton/CoolButton-Prefix.pch";
+				INFOPLIST_FILE = "CoolButton/CoolButton-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		040ACCF619D2A99300E5931E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoolButton/CoolButton-Prefix.pch";
+				INFOPLIST_FILE = "CoolButton/CoolButton-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		040ACCF819D2A99300E5931E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoolButton.app/CoolButton";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoolButton/CoolButton-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CoolButtonTests/CoolButtonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		040ACCF919D2A99300E5931E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoolButton.app/CoolButton";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoolButton/CoolButton-Prefix.pch";
+				INFOPLIST_FILE = "CoolButtonTests/CoolButtonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		040ACCBA19D2A99200E5931E /* Build configuration list for PBXProject "CoolButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040ACCF219D2A99300E5931E /* Debug */,
+				040ACCF319D2A99300E5931E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		040ACCF419D2A99300E5931E /* Build configuration list for PBXNativeTarget "CoolButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040ACCF519D2A99300E5931E /* Debug */,
+				040ACCF619D2A99300E5931E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		040ACCF719D2A99300E5931E /* Build configuration list for PBXNativeTarget "CoolButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040ACCF819D2A99300E5931E /* Debug */,
+				040ACCF919D2A99300E5931E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 040ACCB719D2A99200E5931E /* Project object */;
+}
